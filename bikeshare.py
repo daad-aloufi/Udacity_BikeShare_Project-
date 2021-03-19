@@ -169,17 +169,17 @@ def user_stats(df):
     #Display earliest, most recent, and most common year of birth
     try:
         earliest_year_of_birth = int(df['Birth Year'].min())
-        print('\nThe earliest year of birth is: ', earliest_year_of_birth)
+        print('\nThe earliest year of birth is: \n', earliest_year_of_birth)
         most_recent_year_of_birth = int(df['Birth Year'].max())
-        print('\nThe most recent year of birth is: ', most_recent_year_of_birth)
+        print('\nThe most recent year of birth is: \n', most_recent_year_of_birth)
         most_common_year_of_birth = int(df['Birth Year'].mode()[0])
-        print('\nThe most common year of birth is: ', most_common_year_of_birth)
+        print('\nThe most common year of birth is: \n', most_common_year_of_birth)
     except:
         print(" (@_@) !\nthis city dosen\'t have data of birth year")
-    
+
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
-    
+
     raw = 1
     while True:
         more_raw = input('\nDo you want to see more raw of data? (please enter YES or No)\n')
