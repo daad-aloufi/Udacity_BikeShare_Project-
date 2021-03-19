@@ -1,5 +1,7 @@
 project Number:(2)
-project Name: exploring bikeshare data of 3 cities.
+
+project Title:
+Exploring bikeshare data of Chicago, New York City and Washington.
 
 To complete the project, I have used these software:
 - Python 3 with NumPy and pandas installed using Anaconda.
