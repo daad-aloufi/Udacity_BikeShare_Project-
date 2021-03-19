@@ -114,7 +114,7 @@ def station_stats(df):
     print('\nCalculating The Most Popular Stations and Trip...\n')
     start_time = time.time()
 
-    #display most commonly used start station
+    #Display most commonly used start station
     most_common_start_station = df['Start Station'].mode()[0]
     print("The most commonly used start station is: ", most_common_start_station, '\n')
 
@@ -137,11 +137,11 @@ def trip_duration_stats(df):
     print('\nCalculating Trip Duration...\n')
     start_time = time.time()
 
-    #display total travel time
+    #Display total travel time
     total_travel_time = df['Trip Duration'].sum()
     print("The total travel time is: ", total_travel_time)
 
-    #display mean travel time
+    #Display mean travel time
     average_travel_time = df['Trip Duration'].mean()
     print("The mean travel time is: ", average_travel_time)
 
@@ -176,10 +176,10 @@ def user_stats(df):
         print('\nThe most common year of birth is: ', most_common_year_of_birth)
     except:
         print(" (@_@) !\nthis city dosen\'t have data of birth year")
-    
+
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
-    
+
     raw = 1
     while True:
         more_raw = input('\nDo you want to see more raw of data? (please enter YES or No)\n')
